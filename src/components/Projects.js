@@ -9,6 +9,12 @@ const PROJECTS = [
     internal: true,
     tags: ['Design', 'Wordpress', 'React', 'Team Lead'],
   },
+  {
+    name: 'Job Search Tracker',
+    description: 'A tool for tracking job applications and search progress.',
+    url: 'https://job-search-tracker-liart.vercel.app/',
+    tags: ['React', 'Next.js', 'Design', 'Product Design'],
+  },
 ];
 
 function Projects() {
@@ -22,7 +28,7 @@ function Projects() {
             const CardTag = project.internal ? Link : 'a';
             const linkProp = project.internal
               ? { to: project.url }
-              : { href: project.url };
+              : { href: project.url, target: '_blank', rel: 'noopener noreferrer' };
 
             return (
               <CardTag
