@@ -68,7 +68,6 @@ const VOLUNTEER = [
     role: 'Web Design Consultant @ Ruth Ellis Center',
     description:
       'Setting technical direction for a team of 3 engineers building a custom WordPress theme, redesigning navigation for faster access to time-sensitive resources, and training nonprofit staff to manage the site independently.',
-    link: { to: '/case-studies/ruth-ellis-center', label: 'case study' },
   },
 ];
 

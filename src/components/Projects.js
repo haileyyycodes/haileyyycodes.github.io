@@ -3,13 +3,6 @@ import './Projects.css';
 
 const PROJECTS = [
   {
-    name: 'Case Study: Ruth Ellis Center',
-    description: 'Case study — details coming soon.',
-    url: '/case-studies/ruth-ellis-center',
-    internal: true,
-    tags: ['Design', 'Wordpress', 'React', 'Team Lead'],
-  },
-  {
     name: 'Job Search Tracker',
     description: 'A tool for tracking job applications and search progress.',
     url: 'https://job-search-tracker-liart.vercel.app/',
