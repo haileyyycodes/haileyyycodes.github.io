@@ -11,6 +11,7 @@ function Header() {
         <nav className="nav-links">
           <Link to="/#about">./about</Link>
           <Link to="/#projects">./projects</Link>
+          <Link to="/ai-workflow">./ai-workflow</Link>
           <Link to="/#contact">./contact</Link>
         </nav>
       </div>
