@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import './AIWorkflowPage.css';
 
-// NOTE: the /grill-me, /repo-rundown, and /tactile-ux skills referenced
-// below don't have public pages yet. They're rendered as `.skill-ref`
-// tokens for now — pass an `href` to turn one into a link (see /tech-tutor).
-// Same goes for the "here" link in the tactile-ux item.
+// NOTE: the /grill-me and /tactile-ux skills referenced below don't have
+// public pages yet. They're rendered as `.skill-ref` tokens for now — pass
+// an `href` to turn one into a link (see /tech-tutor, /repo-rundown). Same
+// goes for the "here" link in the tactile-ux item.
 
 function SkillRef({ name, href }) {
   if (href) {
@@ -100,9 +100,13 @@ function AIWorkflowPage() {
                 </li>
                 <li>
                   I use it to get up to speed for new projects I’m thrown
-                  into, namely using my <SkillRef name="/repo-rundown" /> skill
-                  to understand a new repo, the lay of the land, the pain
-                  points, and the tech stack.
+                  into, namely using my{' '}
+                  <SkillRef
+                    name="/repo-rundown"
+                    href="https://github.com/haileyyycodes/ai-skills/tree/main/repo-rundown"
+                  />{' '}
+                  skill to understand a new repo, the lay of the land, the
+                  pain points, and the tech stack.
                 </li>
                 <li>
                   I use it to get a product or project’s UX and UI to a
