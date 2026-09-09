@@ -6,7 +6,7 @@ function Header() {
     <header className="site-header">
       <div className="header-inner">
         <Link to="/#top" className="logo">
-          <span className="logo-prefix">~/</span> hailey
+          <span className="logo-prefix">~/</span> haileyyycodes
         </Link>
         <nav className="nav-links">
           <Link to="/#about">./about</Link>
