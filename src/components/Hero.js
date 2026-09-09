@@ -28,9 +28,12 @@ function Hero() {
           <Link to="/#projects" className="btn btn-primary">
             View projects
           </Link>
-          <Link to="/#contact" className="btn btn-secondary">
+          <a
+            href="mailto:haileymariejohn@gmail.com"
+            className="btn btn-secondary"
+          >
             Get in touch
-          </Link>
+          </a>
         </div>
 
         <p className="hero-footer">
