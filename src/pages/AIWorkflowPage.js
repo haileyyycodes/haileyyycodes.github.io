@@ -120,10 +120,6 @@ function AIWorkflowPage() {
                   standards defined in the skill. The skill can also be used
                   during development as a marker for how to build things.
                 </li>
-                <li>
-                  Grammar &amp; spelling: have you ever met an engineer who
-                  wasn’t dyslexic?
-                </li>
               </ol>
             </div>
 
