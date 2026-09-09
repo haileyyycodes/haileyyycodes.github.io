@@ -56,7 +56,38 @@ function AIWorkflowPage() {
                     name="/grill-me"
                     href="https://github.com/mattpocock/skills/blob/main/docs/productivity/grill-me.md"
                   />, I like to flesh out blind spots in my original idea and
-                  start to transition the idea into “AI production mode.”
+                  start to transition the idea into “AI production mode.” I
+                  generate a Product Requirements Document (PRD) that clearly
+                  defines the scope of the project, the goals, and the intended
+                  user experience. I also like to define the tech stack and
+                  architecture at this stage.
+                </li>
+                <li>
+                  <strong>
+                    To create a mock-up or to not create a mock-up? That is
+                    the question.
+                  </strong>
+                  <ul className="aw-sublist">
+                    <li>
+                      If I’m starting from scratch: I will start to define a
+                      visual language and design system for the product idea
+                      and then mock out the most complicated “base” of the
+                      application.
+                    </li>
+                    <li>
+                      If I’m working on an existing project: I will start by
+                      seeing if the UX &amp; UI are simple enough to describe
+                      in written word (this should have been done in the PRD).
+                      If so, I usually can trust a coding AI with the
+                      implementation and my{' '}
+                      <SkillRef
+                        name="/tactile-ux"
+                        href="https://github.com/haileyyycodes/ai-skills/tree/main/tactile-ux"
+                      />{' '}
+                      skill to verify the implementation. If not, I will mock
+                      out the new feature for brainstorming and implementation.
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   Depending on the size of the PRD, I will either implement
