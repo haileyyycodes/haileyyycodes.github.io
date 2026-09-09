@@ -154,14 +154,17 @@ function AIWorkflowPage() {
                     </li>
                   </ul>
                 </li>
-                <li>Constructing texts and emails to loved ones or colleagues.</li>
+                <li>
+                  Constructing texts and emails to loved ones or colleagues.
+                  <ul className="aw-sublist">
+                    <li>
+                      Life is far too short and far too long to delegate what
+                      fundamentally makes us human.
+                    </li>
+                  </ul>
+                </li>
               </ol>
             </div>
-
-            <blockquote className="aw-closing">
-              Life is far too short and far too long to delegate what
-              fundamentally makes us human.
-            </blockquote>
           </div>
         </div>
       </div>
