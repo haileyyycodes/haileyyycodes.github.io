@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Hero.css';
 
+const YEARS_EXPERIENCE = new Date().getFullYear() - 2018;
+
 function Hero() {
   return (
     <section className="hero" id="top">
@@ -13,28 +15,47 @@ function Hero() {
         <p className="hero-command">$ whoami</p>
 
         <h1 className="hero-heading">
-          Hailey — full stack engineer<span className="accent-dot">.</span>
+          Hailey Johnson<span className="accent-dot">.</span>
         </h1>
 
+        <div className="hero-tags">
+          <span className="hero-tag">{YEARS_EXPERIENCE} years of experience</span>
+          <span className="hero-tag">Full-stack Engineer</span>
+          <span className="hero-tag">Designer</span>
+        </div>
+
         <p className="hero-description">
-          8+ years building rock-solid web applications and polished UX. My
-          design background and deep engineering knowledge let me move
-          fluidly between both worlds — shipping fast without ever
-          compromising the user experience and the technical integrity of a
-          project.
+          I graduated from college in May 2018 with a Computer Science degree
+          and was 3 courses shy of a Graphic Design degree. Sometimes people
+          ask why I never finished, and I tell them that I filled my time with
+          as much design and coding as I possibly could, but by the end of 4
+          years I had simply taken more Computer Science courses than Graphic
+          Design courses.
+        </p>
+        <p className="hero-description">
+          During that time I made a natural progression from graphic design to
+          UX to engineering, but I am most effective when I'm able to move
+          freely between the disciplines with ownership over the outcome. My
+          greatest strength is that I can visualize an app, a feature, or a
+          bug from top to bottom—the design, the UX, and the technical
+          solution. I care deeply about the user and the quality of what I
+          build.
         </p>
 
         <div className="hero-actions">
-          <Link to="/#projects" className="btn btn-primary">
+          <Link to="/projects" className="btn btn-primary">
             View projects
           </Link>
-          <Link to="/#contact" className="btn btn-secondary">
+          <a
+            href="mailto:haileymariejohn@gmail.com"
+            className="btn btn-secondary"
+          >
             Get in touch
-          </Link>
+          </a>
         </div>
 
         <p className="hero-footer">
-          ( building since 2017
+          ( building since 2018
           <span className="cursor" />
         </p>
       </div>

@@ -5,7 +5,7 @@ function RuthEllisCenterCaseStudy() {
   return (
     <section className="case-study">
       <div className="case-study-inner">
-        <Link to="/#projects" className="back-link">
+        <Link to="/projects" className="back-link">
           ← back to projects
         </Link>
 

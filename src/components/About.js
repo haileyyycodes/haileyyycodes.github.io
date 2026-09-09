@@ -101,21 +101,10 @@ function About() {
         <div className="tui-card">
           <div className="tui-card-header">
             <span className="tui-card-dot" />
-            <span className="tui-card-filename">README.txt</span>
+            <span className="tui-card-filename">readme.md</span>
           </div>
 
           <div className="tui-card-body">
-            <div className="card-block">
-              <h3 className="block-label"># bio</h3>
-              <p className="bio-text">
-                Full-stack software engineer, 8+ years in, building
-                accessible, production-grade web applications end-to-end.
-                Deep expertise in Angular and React, with a recent focus on
-                agentic coding tools like Claude Code and GitHub Copilot to
-                ship polished, well-tested UI faster.
-              </p>
-            </div>
-
             <div className="card-block">
               <h3 className="block-label"># skills</h3>
               <div className="skills-groups">
