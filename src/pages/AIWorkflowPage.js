@@ -69,10 +69,12 @@ function AIWorkflowPage() {
                   </strong>
                   <ul className="aw-sublist">
                     <li>
-                      If I’m starting from scratch: I will start to define a
+                      If I’m starting from scratch: I start by defining a
                       visual language and design system for the product idea
                       and then mock out the most complicated “base” of the
-                      application.
+                      application. This is usually the basic flow of the site,
+                      in addition to the most complicated features to visualize
+                      without a visual reference.
                     </li>
                     <li>
                       If I’m working on an existing project: I will start by
@@ -85,7 +87,8 @@ function AIWorkflowPage() {
                         href="https://github.com/haileyyycodes/ai-skills/tree/main/tactile-ux"
                       />{' '}
                       skill to verify the implementation. If not, I will mock
-                      out the new feature for brainstorming and implementation.
+                      up the new feature in Figma or Claude Design for
+                      brainstorming and implementation.
                     </li>
                   </ul>
                 </li>
