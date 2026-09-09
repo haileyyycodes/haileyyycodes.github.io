@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import './AIWorkflowPage.css';
 
-// NOTE: the /grill-me and /tactile-ux skills referenced below don't have
-// public pages yet. They're rendered as `.skill-ref` tokens for now — pass
-// an `href` to turn one into a link (see /tech-tutor, /repo-rundown). Same
+// NOTE: the /grill-me skill referenced below doesn't have a public page
+// yet. It's rendered as a `.skill-ref` token for now — pass an `href` to
+// turn one into a link (see /tech-tutor, /repo-rundown, /tactile-ux). Same
 // goes for the "here" link in the tactile-ux item.
 
 function SkillRef({ name, href }) {
@@ -111,8 +111,12 @@ function AIWorkflowPage() {
                 <li>
                   I use it to get a product or project’s UX and UI to a
                   standard place. What does that mean? I use the{' '}
-                  <SkillRef name="/tactile-ux" /> skill I created to quickly
-                  verify and implement UX/UI standards defined in the skill.
+                  <SkillRef
+                    name="/tactile-ux"
+                    href="https://github.com/haileyyycodes/ai-skills/tree/main/tactile-ux"
+                  />{' '}
+                  skill I created to quickly verify and implement UX/UI
+                  standards defined in the skill.
                   The skill can also be used during development as a marker for
                   how to build things. Check out how that skill works{' '}
                   <a className="inline-link" href="#">
