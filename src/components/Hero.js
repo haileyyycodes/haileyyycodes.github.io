@@ -13,7 +13,7 @@ function Hero() {
         <p className="hero-command">$ whoami</p>
 
         <h1 className="hero-heading">
-          Hailey — full stack engineer<span className="accent-dot">.</span>
+          Hailey Johnson<span className="accent-dot">.</span>
         </h1>
 
         <p className="hero-description">
