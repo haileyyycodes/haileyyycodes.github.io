@@ -10,7 +10,7 @@ function Header() {
         </Link>
         <nav className="nav-links">
           <Link to="/#about">./about</Link>
-          <Link to="/#projects">./projects</Link>
+          <Link to="/projects">./projects</Link>
           <Link to="/ai-workflow">./ai-workflow</Link>
           <a
             className="nav-icon"

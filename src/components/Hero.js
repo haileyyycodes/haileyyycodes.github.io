@@ -43,7 +43,7 @@ function Hero() {
         </p>
 
         <div className="hero-actions">
-          <Link to="/#projects" className="btn btn-primary">
+          <Link to="/projects" className="btn btn-primary">
             View projects
           </Link>
           <a

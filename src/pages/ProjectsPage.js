@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Projects.css';
+import './ProjectsPage.css';
 
 const PROJECTS = [
   {
@@ -10,25 +10,30 @@ const PROJECTS = [
   },
 ];
 
-function Projects() {
+function ProjectsPage() {
   return (
-    <section className="projects" id="projects">
-      <div className="projects-inner">
+    <section className="projects-page">
+      <div className="projects-page-inner">
+        <Link to="/#top" className="back-link">
+          ← back home
+        </Link>
+
         <p className="section-label">// PROJECTS</p>
+        <h1 className="projects-page-title">Projects</h1>
 
         <div className="projects-list">
           {PROJECTS.map((project) => {
             const CardTag = project.internal ? Link : 'a';
             const linkProp = project.internal
               ? { to: project.url }
-              : { href: project.url, target: '_blank', rel: 'noopener noreferrer' };
+              : {
+                  href: project.url,
+                  target: '_blank',
+                  rel: 'noopener noreferrer',
+                };
 
             return (
-              <CardTag
-                className="project-card"
-                key={project.name}
-                {...linkProp}
-              >
+              <CardTag className="project-card" key={project.name} {...linkProp}>
                 <div className="project-card-header">
                   <h3 className="project-name">{project.name}</h3>
                   <span className="project-arrow">↗</span>
@@ -52,4 +57,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsPage;

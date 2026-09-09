@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Projects from '../components/Projects';
 
 function HomePage() {
   const location = useLocation();
@@ -17,7 +16,6 @@ function HomePage() {
     <>
       <Hero />
       <About />
-      <Projects />
     </>
   );
 }
