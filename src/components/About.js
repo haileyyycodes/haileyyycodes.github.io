@@ -101,7 +101,7 @@ function About() {
         <div className="tui-card">
           <div className="tui-card-header">
             <span className="tui-card-dot" />
-            <span className="tui-card-filename">README.txt</span>
+            <span className="tui-card-filename">readme.md</span>
           </div>
 
           <div className="tui-card-body">
