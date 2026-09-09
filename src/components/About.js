@@ -106,6 +106,25 @@ function About() {
 
           <div className="tui-card-body">
             <div className="card-block">
+              <h3 className="block-label"># bio</h3>
+              <p className="bio-text">
+                I graduated from college in May 2018 with a Computer Science
+                degree and was 3 courses shy of a Graphic Design degree.
+                Sometimes people ask why I never finished, and I tell them
+                that I filled my time with as much design and coding as I
+                possibly could, but by the end of 4 years I had simply taken
+                more Computer Science courses than Graphic Design courses.
+                During that time I made a natural progression from graphic
+                design to UX to engineering, but I am most effective when I'm
+                able to move freely between the disciplines with ownership
+                over the outcome. My greatest strength is that I can visualize
+                an app, a feature, or a bug from top to bottom—the design, the
+                UX, and the technical solution. I care deeply about the user
+                and the quality of what I build.
+              </p>
+            </div>
+
+            <div className="card-block">
               <h3 className="block-label"># skills</h3>
               <div className="skills-groups">
                 {SKILL_GROUPS.map((group) => (
