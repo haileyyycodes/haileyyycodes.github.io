@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
 import './AIWorkflowPage.css';
 
-// NOTE: the /grill-me skill referenced below doesn't have a public page
-// yet. It's rendered as a `.skill-ref` token for now — pass an `href` to
-// turn one into a link (see /tech-tutor, /repo-rundown, /tactile-ux).
+// NOTE: skill tokens render as plain `.skill-ref` code unless given an
+// `href`, in which case they become an external link.
 
 function SkillRef({ name, href }) {
   if (href) {
@@ -52,9 +51,12 @@ function AIWorkflowPage() {
                   written by hand with clear goals and intentions.
                 </li>
                 <li>
-                  Using <SkillRef name="/grill-me" />, I like to flesh out
-                  blind spots in my original idea and start to transition the
-                  idea into “AI production mode.”
+                  Using{' '}
+                  <SkillRef
+                    name="/grill-me"
+                    href="https://github.com/mattpocock/skills/blob/main/docs/productivity/grill-me.md"
+                  />, I like to flesh out blind spots in my original idea and
+                  start to transition the idea into “AI production mode.”
                 </li>
                 <li>
                   Depending on the size of the PRD, I will either implement
