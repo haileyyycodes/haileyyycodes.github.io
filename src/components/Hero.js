@@ -55,7 +55,7 @@ function Hero() {
         </div>
 
         <p className="hero-footer">
-          ( building since 2017
+          ( building since 2018
           <span className="cursor" />
         </p>
       </div>
