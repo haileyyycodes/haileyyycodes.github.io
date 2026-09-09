@@ -87,16 +87,6 @@ a.skill-ref-link:hover {
   background: rgba(46, 230, 166, 0.16);
 }
 
-.inline-link {
-  color: var(--color-accent);
-  text-decoration: none;
-  border-bottom: 1px dotted var(--color-accent);
-}
-
-.inline-link:hover {
-  border-bottom-style: solid;
-}
-
 @media (max-width: 640px) {
   .ai-workflow-title {
     font-size: 30px;

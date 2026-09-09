@@ -3,8 +3,7 @@ import './AIWorkflowPage.css';
 
 // NOTE: the /grill-me skill referenced below doesn't have a public page
 // yet. It's rendered as a `.skill-ref` token for now — pass an `href` to
-// turn one into a link (see /tech-tutor, /repo-rundown, /tactile-ux). Same
-// goes for the "here" link in the tactile-ux item.
+// turn one into a link (see /tech-tutor, /repo-rundown, /tactile-ux).
 
 function SkillRef({ name, href }) {
   if (href) {
@@ -116,13 +115,8 @@ function AIWorkflowPage() {
                     href="https://github.com/haileyyycodes/ai-skills/tree/main/tactile-ux"
                   />{' '}
                   skill I created to quickly verify and implement UX/UI
-                  standards defined in the skill.
-                  The skill can also be used during development as a marker for
-                  how to build things. Check out how that skill works{' '}
-                  <a className="inline-link" href="#">
-                    here
-                  </a>
-                  .
+                  standards defined in the skill. The skill can also be used
+                  during development as a marker for how to build things.
                 </li>
                 <li>
                   Grammar &amp; spelling: have you ever met an engineer who
