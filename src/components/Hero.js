@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Hero.css';
 
+const YEARS_EXPERIENCE = new Date().getFullYear() - 2018;
+
 function Hero() {
   return (
     <section className="hero" id="top">
@@ -15,6 +17,12 @@ function Hero() {
         <h1 className="hero-heading">
           Hailey Johnson<span className="accent-dot">.</span>
         </h1>
+
+        <div className="hero-tags">
+          <span className="hero-tag">{YEARS_EXPERIENCE} years of experience</span>
+          <span className="hero-tag">Designer</span>
+          <span className="hero-tag">Full-stack Engineer</span>
+        </div>
 
         <p className="hero-description">
           I graduated from college in May 2018 with a Computer Science degree
