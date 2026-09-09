@@ -62,12 +62,6 @@
   color: var(--color-text);
 }
 
-.hero-tag:first-child {
-  color: var(--color-accent);
-  border-color: rgba(46, 230, 166, 0.35);
-  background: rgba(46, 230, 166, 0.08);
-}
-
 .hero-description {
   color: var(--color-text-muted);
   font-size: 17px;

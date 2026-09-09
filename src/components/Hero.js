@@ -20,8 +20,8 @@ function Hero() {
 
         <div className="hero-tags">
           <span className="hero-tag">{YEARS_EXPERIENCE} years of experience</span>
-          <span className="hero-tag">Designer</span>
           <span className="hero-tag">Full-stack Engineer</span>
+          <span className="hero-tag">Designer</span>
         </div>
 
         <p className="hero-description">
