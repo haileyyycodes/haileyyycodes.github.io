@@ -1,23 +1,45 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="site-header">
       <div className="header-inner">
-        <Link to="/#top" className="logo">
+        <Link to="/#top" className="logo" onClick={closeMenu}>
           <span className="logo-prefix">~/</span> haileyyycodes
         </Link>
-        <nav className="nav-links">
-          <Link to="/#about">./about</Link>
-          <Link to="/projects">./projects</Link>
-          <Link to="/ai-workflow">./ai-workflow</Link>
+        <button
+          type="button"
+          className="nav-toggle"
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+          aria-controls="site-nav"
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span className="nav-toggle-bar" />
+          <span className="nav-toggle-bar" />
+          <span className="nav-toggle-bar" />
+        </button>
+        <nav
+          id="site-nav"
+          className={`nav-links${menuOpen ? ' is-open' : ''}`}
+        >
+          <Link to="/#about" onClick={closeMenu}>./about</Link>
+          <Link to="/projects" onClick={closeMenu}>./projects</Link>
+          <Link to="/ai-workflow" onClick={closeMenu}>./ai-workflow</Link>
+          <div className="nav-social">
           <a
             className="nav-icon"
             href="https://github.com/haileyyycodes"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
+            onClick={closeMenu}
           >
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
               <path
@@ -32,6 +54,7 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
+            onClick={closeMenu}
           >
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
               <path
@@ -40,6 +63,7 @@ function Header() {
               />
             </svg>
           </a>
+          </div>
         </nav>
       </div>
     </header>
